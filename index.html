@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="app/styles/main.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Routing Application</title>
+  </head>
+
+  <body ng-app="myApp">
+
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-body" >
+          <ul class="nav nav-pills pull-right grey">
+            <li role="presentation"><a href="#/administrator">ADMINISTRATOR</a></li>
+            <li role="presentation"><a href="#/hr">HR</a></li>
+            <li role="presentation"><a href="#/employee">EMPLOYEE</a></li>
+          </ul>
+        </div>
+      </div>
+     <div ui-view=""></div>
+
+    </div>
+
+    <div class="footer">
+      <!--Put a footer if required-->
+    </div>
+
+    <!-- scripts -->
+    <!-- node modules -->
+   
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+
+    <!-- Custom scripts -->
+    <script src="app/app.module.js"></script>
+
+    <!-- Features -->
+
+    <!-- employee -->
+    <script src="app/features/Employee/employee.module.js"></script>
+    <script src="app/features/Employee/employee.route.js"></script>
+    <script src="app/features/Employee/employee.controller.js"></script>
+
+    <!-- HR -->
+    <script src="app/features/Hr/hr.module.js"></script>
+    <script src="app/features/Hr/hr.route.js"></script>
+    <script src="app/features/Hr/hr.controller.js"></script>
+
+    <!-- admin -->
+    <script src="app/features/Administrator/administrator.module.js"></script>
+    <script src="app/features/Administrator/administrator.route.js"></script>
+    <script src="app/features/Administrator/administrator.controller.js"></script>
+
+
+  </body>
+
+</html>

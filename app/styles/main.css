@@ -1,0 +1,33 @@
+.nav-pills a{
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+}
+.nav-pills a:hover{
+  color: #565656;
+}
+.nav-pills a:selected{
+  color: #565656;
+}
+h1{
+  text-align: center;
+  vertical-align: middle;
+}
+.outer-div{
+  padding: 100px;
+}
+.inner-div{
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+}
+body{
+  background-color: #D7CEC7;
+}
+.panel{
+  background-color:#565656;
+  margin-bottom:0px;
+}
+.w3-container{
+  background-color: #76323F;
+}

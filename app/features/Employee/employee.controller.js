@@ -10,21 +10,40 @@
   function EmployeeController($state){
     var empCtrl  = this;
 
-    empCtrl.delivery = function(){
-      $state.go('employee.delivery');
-      console.log($state);
-    };
+    empCtrl.options = [
+      { name: 'UI Team',
+       url: 'employee.delivery.ui'
+      },
+      {
+        name: 'Server Side Team',
+        url: 'employee.delivery.serversideteam'                     
+      },
+      {
+        name: 'DB Team',
+        url: 'employee.delivery.dbteam'
+      },
+      {
+        name: 'QA Team',
+        url: 'employee.delivery.qateam'
+      }];
 
-    empCtrl.home = function(){
-      $state.go('employee.home');
-    };
-
-    empCtrl.businessDevelopment = function(){
-      $state.go('employee.bd');
-    };
-
-    empCtrl.it = function(){
-      $state.go('employee.it');
-    };
+    empCtrl.tabs = [
+      {
+        name : 'Home',
+        url : 'employee.home'
+      },
+      {
+        name : 'Delivery',
+        url : 'employee.delivery'
+      },
+      {
+        name : 'Business Development',
+        url : 'employee.bd'
+      },
+      {
+        name : 'IT Support',
+        url : 'employee.it'
+      }
+    ];
   }
 })();

@@ -1,8 +1,6 @@
 <div class="w3-container" style="padding:20px">
   <ul class="nav nav-pills"> 
-    <li role="presentation"><a ng-click="adminCtrl.home()">Home</a></li>
-    <li role="presentation"><a ng-click="adminCtrl.announcements()">Announcements</a></li>
-    <li role="presentation"><a ng-click="adminCtrl.settings()">Settings</a></li>
+    <li ng-repeat="tab in adminCtrl.tabs"><a ui-sref="{{tab.url}}">{{tab.name}}</a></li>
   </ul>
 </div>
 

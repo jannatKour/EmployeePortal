@@ -16,18 +16,17 @@
 
   <body ng-app="myApp">
 
-
     <div class="container">
       <div class="panel panel-default">
         <div class="panel-body" >
           <ul class="nav nav-pills pull-right grey">
-            <li role="presentation"><a href="#/administrator">ADMINISTRATOR</a></li>
-            <li role="presentation"><a href="#/hr">HR</a></li>
-            <li role="presentation"><a href="#/employee">EMPLOYEE</a></li>
+            <li role="presentation"><a ui-sref = "administrator">ADMINISTRATOR</a></li>
+            <li role="presentation"><a ui-sref = "hr">HR</a></li>
+            <li role="presentation"><a ui-sref = "employee">EMPLOYEE</a></li>
           </ul>
         </div>
       </div>
-     <div ui-view=""></div>
+      <div ui-view=""></div>
 
     </div>
 
@@ -37,12 +36,12 @@
 
     <!-- scripts -->
     <!-- node modules -->
-   
+
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+
 
     <!-- Custom scripts -->
     <script src="app/app.module.js"></script>

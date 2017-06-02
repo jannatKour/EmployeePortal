@@ -1,9 +1,6 @@
 <div class="w3-container" style="padding:20px">
   <ul class="nav nav-pills"> 
-    <li role="presentation active"><a ng-click="empCtrl.home()">Home</a></li>
-    <li role="presentation"><a ng-click="empCtrl.delivery()">Delivery</a></li>
-    <li role="presentation"><a ng-click="empCtrl.businessDevelopment()">Business Development</a></li>
-    <li role="presentation"><a ng-click="empCtrl.it()">IT Support</a></li>
+    <li ng-repeat="tab in empCtrl.tabs"><a ui-sref="{{tab.url}}">{{tab.name}}</a></li>
   </ul>
 </div>
 <div ui-view=""></div>

@@ -8,7 +8,7 @@
   homeConfig.$inject = ['$urlRouterProvider', '$stateProvider'];
 
   function homeConfig($urlRouterProvider, $stateProvider){
-   
+
     $urlRouterProvider
       .when('/employee', '/employee/home');
 
@@ -19,50 +19,58 @@
       controller: 'EmployeeController as empCtrl'  
     })
 
-      .state('employee.home', {
+      .state('employeeHome', {
       url:'/home',
+      parent: 'employee',
       templateUrl: 'app/features/Employee/employee.home.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })
 
-      .state('employee.delivery', { 
+      .state('delivery', { 
       url:'/delivery',
+      parent: 'employee',
       templateUrl: 'app/features/Employee/employee.delivery.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })
 
-      .state('employee.bd', {
+      .state('bd', {
       url: '/bd',
+      parent: 'employee',
       templateUrl: 'app/features/Employee/employee.bd.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })
 
-      .state('employee.it', {
+      .state('it', {
       url: '/it',
+      parent: 'employee',
       templateUrl: 'app/features/Employee/employee.it.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })
 
-      .state('employee.delivery.ui', {
-      url: '/ui',
+      .state('ui', {
+      url: '/employee/delivery/ui',
+      parent: 'delivery',
       templateUrl: 'app/features/Employee/employee.delivery/delivery.uiteam.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })
 
-      .state('employee.delivery.serversideteam', {
-      url: '/serversideteam',
+      .state('serversideteam', {
+      url: '/employee/delivery/serversideteam',
+      parent: 'delivery',
       templateUrl: 'app/features/Employee/employee.delivery/delivery.serversideteam.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })
 
-      .state('employee.delivery.dbteam', {
-      url: '/dbteam',
+      .state('dbteam', {
+      url: '/employee/delivery/dbteam',
+      parent: 'delivery',
       templateUrl: 'app/features/Employee/employee.delivery/delivery.dbteam.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })
 
-      .state('employee.delivery.qateam', {
-      url: '/qateam',
+      .state('qateam', {
+      url: '/employee/delivery/qateam',
+      parent: 'delivery',
       templateUrl: 'app/features/Employee/employee.delivery/delivery.qateam.tpl.html',
       controller: 'EmployeeController as empCtrl'
     });

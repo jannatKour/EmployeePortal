@@ -5,44 +5,44 @@
     .module('myApp')
     .controller('EmployeeController', EmployeeController);
 
-  EmployeeController.$inject = ['$state'];
+  EmployeeController.$inject = [];
 
-  function EmployeeController($state){
+  function EmployeeController(){
     var empCtrl  = this;
 
     empCtrl.options = [
       { name: 'UI Team',
-       url: 'employee.delivery.ui'
+       url: 'ui'
       },
       {
         name: 'Server Side Team',
-        url: 'employee.delivery.serversideteam'                     
+        url: 'serversideteam'                     
       },
       {
         name: 'DB Team',
-        url: 'employee.delivery.dbteam'
+        url: 'dbteam'
       },
       {
         name: 'QA Team',
-        url: 'employee.delivery.qateam'
+        url: 'qateam'
       }];
 
     empCtrl.tabs = [
       {
         name : 'Home',
-        url : 'employee.home'
+        url : 'employeeHome'
       },
       {
         name : 'Delivery',
-        url : 'employee.delivery'
+        url : 'delivery'
       },
       {
         name : 'Business Development',
-        url : 'employee.bd'
+        url : 'bd'
       },
       {
         name : 'IT Support',
-        url : 'employee.it'
+        url : 'it'
       }
     ];
   }

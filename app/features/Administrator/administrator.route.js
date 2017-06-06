@@ -19,44 +19,51 @@
       controller: 'AdministratorController as adminCtrl'  
     })
 
-      .state('administrator.home', {
+      .state('home', {
       url:'/home',
+      parent: 'administrator',
       templateUrl: 'app/features/Administrator/administrator.home.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     })
 
-      .state('administrator.announcements', { 
+      .state('announcements', { 
       url:'/announcements',
+      parent: 'administrator',
       templateUrl: 'app/features/Administrator/administrator.announcements.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     })
 
-      .state('administrator.settings', {
+      .state('settings', {
       url: '/settings',
+      parent: 'administrator',
       templateUrl: 'app/features/Administrator/administrator.settings.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     })
 
-      .state('administrator.settings.users', {
-      url: '/users',
+      .state('users', {
+      url: '/administrator/settings/users',
+      parent: 'settings',
       templateUrl: 'app/features/Administrator/administrator.settings/settings.users.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     })
 
-      .state('administrator.settings.department', {
-      url: '/department',
+      .state('department', {
+      url: '/administrator/settings/department',
+      parent: 'settings',
       templateUrl: 'app/features/Administrator/administrator.settings/settings.department.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     })
 
-      .state('administrator.settings.projects', {
-      url: '/projects',
+      .state('projects', {
+      url: '/administrator/settings/projects',
+      parent: 'settings',
       templateUrl: 'app/features/Administrator/administrator.settings/settings.projects.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     })
 
-      .state('administrator.settings.clients', {
-      url: '/clients',
+      .state('clients', {
+      url: '/administrator/settings/clients',
+      parent: 'settings',
       templateUrl: 'app/features/Administrator/administrator.settings/settings.clients.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     });

@@ -5,39 +5,39 @@
     .module('myApp')
     .controller('AdministratorController', AdministratorController);
 
-  AdministratorController.$inject = ['$state'];
+  AdministratorController.$inject = [];
 
-  function AdministratorController($state){
+  function AdministratorController(){
     var adminCtrl = this;
 
     adminCtrl.options = [
       { name: 'Users',
-        url: 'administrator.settings.users'
+        url: 'users'
       },
       {
         name: 'Departments',
-        url: 'administrator.settings.department'                     
+        url: 'department'                     
       },
       {
         name: 'Projects',
-        url: 'administrator.settings.projects'
+        url: 'projects'
       },
       {
         name: 'Clients',
-        url: 'administrator.settings.clients'
+        url: 'clients'
       }];
 
     adminCtrl.tabs = [
       { name: 'Home',
-       url : 'administrator.home'
+       url : 'home'
       },
       {
         name : 'Announcements',
-        url : 'administrator.announcements'
+        url : 'announcements'
       },
       {
         name : 'Settings',
-        url : 'administrator.settings'
+        url : 'settings'
       }];
 
   }

@@ -5,27 +5,27 @@
     .module('myApp')
     .controller('HrController', HrController);
 
-  HrController.$inject = ['$state'];
+  HrController.$inject = [];
 
-  function HrController($state){
+  function HrController(){
     var hrCtrl = this;
 
     hrCtrl.tabs = [
       {
         name : 'Home',
-        url : 'hr.home'
+        url : 'hrHome',
       },
       {
         name : 'Recruitment',
-        url : 'hr.recruitment'
+        url : 'recruitment'
       },
       {
         name : 'Finance',
-        url : 'hr.finance'
+        url : 'finance'
       },
       {
         name : 'Admin',
-        url : 'hr.admin'
+        url : 'admin'
       }];
   }
 })();

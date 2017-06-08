@@ -24,11 +24,11 @@
             <li role="presentation"><a ui-sref = "hr">HR</a></li>
             <li role="presentation"><a ui-sref = "employee">EMPLOYEE</a></li>
           </ul>
-        </div>
-      </div>
+        </div><!-- panel-body-->
+      </div><!-- panel-default -->
       <div ui-view=""></div>
 
-    </div>
+    </div><!--container-->
 
     <div class="footer">
       <!--Put a footer if required-->
@@ -49,20 +49,23 @@
     <!-- Features -->
 
     <!-- employee -->
-    <script src="app/features/Employee/employee.module.js"></script>
-    <script src="app/features/Employee/employee.route.js"></script>
-    <script src="app/features/Employee/employee.controller.js"></script>
+    <script src="app/features/employee/employee.module.js"></script>
+    <script src="app/features/employee/employee.route.js"></script>
+    <script src="app/features/employee/employee.controller.js"></script>
 
     <!-- HR -->
-    <script src="app/features/Hr/hr.module.js"></script>
-    <script src="app/features/Hr/hr.route.js"></script>
-    <script src="app/features/Hr/hr.controller.js"></script>
+    <script src="app/features/hr/hr.module.js"></script>
+    <script src="app/features/hr/hr.route.js"></script>
+    <script src="app/features/hr/hr.controller.js"></script>
 
     <!-- admin -->
-    <script src="app/features/Administrator/administrator.module.js"></script>
-    <script src="app/features/Administrator/administrator.route.js"></script>
-    <script src="app/features/Administrator/administrator.controller.js"></script>
+    <script src="app/features/administrator/administrator.module.js"></script>
+    <script src="app/features/administrator/administrator.route.js"></script>
+    <script src="app/features/administrator/administrator.controller.js"></script>
 
+    <!--directives-->
+    <script src="app/features/components/menu.directive.js"></script>
+    <script src="app/features/components/side-bar.directive.js"></script>
 
   </body>
 

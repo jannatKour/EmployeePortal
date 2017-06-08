@@ -4,9 +4,15 @@
   angular
     .module('myApp', [
     'ui.router',
+    
+    //employee module
     'myApp.employee',
+    
+    //hr module
     'myApp.hr',
-    'myApp.administrator',
+    
+    //administrator module
+    'myApp.administrator'
   ])
     .config(appConfig);
   

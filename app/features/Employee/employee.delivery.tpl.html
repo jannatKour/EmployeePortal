@@ -1,6 +1,11 @@
 <div class="delivery">
   <ul class= "sidemenu">
-    <li class="option" ng-repeat="option in empCtrl.options"><a ui-sref="{{option.url}}">{{option.name}}</a></li>
+    <sidemenu items = "empCtrl.options"></sidemenu>
   </ul>
-  <div ui-view class="outer-div"><div class="inner-div"><h1>Delivery Team Welcomes You All</h1></div></div>
-</div>
+  <div ui-view class="outer-div">
+    <div class="inner-div">
+      <h1>Change your settings</h1>
+    </div><!-- inner-div -->
+  </div><!-- outer-div -->
+</div><!-- delivery -->
+

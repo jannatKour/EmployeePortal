@@ -1,14 +1,14 @@
 .nav-pills a{
-  color: #FFFFFF;
+  color: #e0b8bf;
   font-weight: bold;
   font-size: 16px;
-  text-decoration-color: #565656;
+  text-decoration-color: green;
 }
 .nav-pills a:hover{
   color: #565656;
 }
 .nav-pills a:active{
-  color:#565656;
+  color: #565656;
 }
 h1{
   text-align: center;
@@ -57,4 +57,10 @@ body{
 }
 .delivery{
   display: flex;
+}
+.active {
+  background : red;
+}
+.selection{
+  background-color : red;
 }

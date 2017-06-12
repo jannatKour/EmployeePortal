@@ -7,11 +7,10 @@
   
   function menu(){
     return{
-      restrict: 'EA',
       scope: {
         items: '=' 
       },
-      templateUrl: 'app/features/layouts/menuBar.tpl.html'
+      templateUrl: 'app/common/templates/menu-bar.tpl.html',
     };
   }
 })();

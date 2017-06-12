@@ -1,0 +1,9 @@
+<ul class="nav nav-pills"> 
+  <li ng-repeat = "item in items track by $index" ng-class = "{active : menuCtrl.activeMenu === item}" ng-click = "menuCtrlsetActiveState(item)">
+    <a ui-sref = "{{item.url}}" ng-bind = "item.name"></a>
+  </li>
+</ul>
+
+
+
+

@@ -11,7 +11,7 @@
       scope: {
         items : '='  
       },
-      templateUrl: 'app/features/layouts/side-menu.tpl.html'
+      templateUrl: 'app/common/templates/side-menu.tpl.html'
     };
   }
 })();

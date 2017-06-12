@@ -2,6 +2,13 @@
   'use strict';
 
   angular
-    .module('myApp.administrator',[]);
-
+    .module('myApp.administrator',[])
+    .config(appConfig);
+  
+  appConfig.$inject = ['$urlRouterProvider', '$stateProvider'];
+  
+  function appConfig($urlRouterProvider, $stateProvider){
+    $urlRouterProvider
+      .when('/administrator', '/administrator/home');
+  }
 })();

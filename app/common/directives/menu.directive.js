@@ -11,6 +11,8 @@
         items: '=' 
       },
       templateUrl: 'app/common/templates/menu-bar.tpl.html',
+      controller: 'MenuController',
+      controllerAs: 'menuCtrl'
     };
   }
 })();

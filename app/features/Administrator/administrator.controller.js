@@ -37,7 +37,7 @@
       },
       {
         name : 'Settings',
-        url : 'settings'
+        url : 'users'
       }];
 
   }

@@ -58,9 +58,13 @@ body{
 .delivery{
   display: flex;
 }
-.active {
-  background : red;
-}
 .selection{
   background-color : red;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  color: #b34d5f;
+  background-color:  #bfbfbf;
+}
+.active {
+  background: #c1717e;
 }

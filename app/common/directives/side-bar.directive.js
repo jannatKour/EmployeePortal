@@ -7,11 +7,12 @@
   
   function sidemenu(){
     return{
-      restrict: 'EA',
       scope: {
         items : '='  
       },
-      templateUrl: 'app/common/templates/side-menu.tpl.html'
+      templateUrl: 'app/common/templates/side-menu.tpl.html',
+      controller: 'SideBarController',
+      controllerAs: 'sideCtrl'
     };
   }
 })();

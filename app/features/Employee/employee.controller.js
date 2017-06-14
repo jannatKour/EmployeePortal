@@ -34,7 +34,7 @@
       },
       {
         name : 'Delivery',
-        url : 'delivery'
+        url : 'ui'
       },
       {
         name : 'Business Development',

@@ -1,5 +1,4 @@
-<li class="option" ng-repeat="item in items track by $index">
-  <a ui-sref="{{item.url}}"
-     ng-bind= "item.name"></a>
+<li class="option" ng-repeat="item in items track by $index" ng-class = "{active : sideCtrl.activeMenu == item.name}" ng-click = "sideCtrl.setActiveState(item)" ng-init = "sideCtrl.setInitialState(items)">
+  <a ui-sref="{{item.url}}" ng-bind= "item.name"></a>
 </li>
-                              
+ 

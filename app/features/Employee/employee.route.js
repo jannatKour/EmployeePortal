@@ -10,7 +10,7 @@
   function homeConfig($urlRouterProvider, $stateProvider){
 
     $urlRouterProvider
-      .when('/employee/delivery', '/employee/delivery/ui');
+      .when('/employee', '/employee/home');
 
     $stateProvider
       .state('employee', {
@@ -29,6 +29,7 @@
       .state('delivery', { 
       url:'/delivery',
       parent: 'employee',
+      abstract: 'true',
       templateUrl: 'app/features/employee/employee-delivery.tpl.html',
       controller: 'EmployeeController as empCtrl'
     })

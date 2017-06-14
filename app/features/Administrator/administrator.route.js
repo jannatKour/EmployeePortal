@@ -10,7 +10,7 @@
   function homeConfig($urlRouterProvider, $stateProvider){
     
     $urlRouterProvider
-      .when('/administrator/settings', '/administrator/settings/users');
+      .when('/administrator', '/administrator/home');
 
     $stateProvider
       .state('administrator', {
@@ -36,6 +36,7 @@
       .state('settings', {
       url: '/settings',
       parent: 'administrator',
+      abstract: 'true',
       templateUrl: 'app/features/administrator/administrator-settings.tpl.html',
       controller: 'AdministratorController as adminCtrl'
     })

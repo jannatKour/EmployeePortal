@@ -10,7 +10,7 @@
       scope: {
         items: '=' 
       },
-      templateUrl: 'app/common/templates/menu-bar.tpl.html',
+      templateUrl: 'app/common/directives/menu-bar/menu-bar.tpl.html',
       controller: 'MenuController',
       controllerAs: 'menuCtrl'
     };

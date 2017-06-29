@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('myApp')
+    .module('myApp.administrator')
     .controller('AdministratorController', AdministratorController);
 
   AdministratorController.$inject = [];
@@ -39,6 +39,10 @@
         name : 'Settings',
         url : 'users'
       }];
+    
+    adminCtrl.testFunc = function(){
+      return true;
+    };
 
   }
 })();

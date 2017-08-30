@@ -8,10 +8,10 @@
   EmployeeController.$inject = ['storageService', '$state'];
 
   function EmployeeController(storageService, $state){
-    var empCtrl  = this,
+    var vm  = this,
         menuItems = null;
 
-    empCtrl.options = [
+    vm.options = [
       { name: 'UI Team',
        
        url: 'ui'
@@ -29,7 +29,7 @@
         url: 'qateam'
       }];
 
-    empCtrl.tabs = [
+    vm.tabs = [
       {
         name : 'Home',
         url : 'employeeHome'
@@ -48,7 +48,7 @@
       }
     ];
 
-    menuItems = (empCtrl.tabs).length > 0 ? empCtrl.tabs : undefined;
+    menuItems = (vm.tabs).length > 0 ? vm.tabs : undefined;
 
     var state;
     
@@ -62,11 +62,11 @@
     }
     getState();
 
-    empCtrl.setActiveState = setActiveState;
+    vm.setActiveState = setActiveState;
     function setActiveState(stateName){
       var i;
-      empCtrl.activeMenu = stateName;
-      storageService.setActiveState(empCtrl.activeMenu);
+      vm.activeMenu = stateName;
+      storageService.setActiveState(vm.activeMenu);
       if(menuItems !== undefined){
         for(i=0; i<menuItems.length; i++){
           if(stateName === menuItems[i].url){

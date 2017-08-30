@@ -8,9 +8,9 @@
   HrController.$inject = [];
 
   function HrController(){
-    var hrCtrl = this;
+    var vm = this;
 
-    hrCtrl.tabs = [
+    vm.tabs = [
       {
         name : 'Home',
         url : 'hrHome',
